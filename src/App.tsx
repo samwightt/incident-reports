@@ -68,10 +68,23 @@ function App() {
       </div>
       {parsedJSON?.success && (
         <div>
-          <IncidentDescription description={parsedJSON.result.description} />
-          <Weather report={parsedJSON.result} />
-          <AddressMap key={fileContent} address={parsedJSON.result.address} />
-          <ApparatusDetails apparati={parsedJSON.result.apparatus} />
+          <div className="flex flex-row w-full gap-4">
+            <div className="w-1/2 space-y-2">
+              <IncidentDescription
+                description={parsedJSON.result.description}
+              />
+              <Weather report={parsedJSON.result} />
+            </div>
+            <div className="w-1/2">
+              <AddressMap
+                key={fileContent}
+                address={parsedJSON.result.address}
+              />
+            </div>
+          </div>
+          <div>
+            <ApparatusDetails apparati={parsedJSON.result.apparatus} />
+          </div>
         </div>
       )}
     </div>

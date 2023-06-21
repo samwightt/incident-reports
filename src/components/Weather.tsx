@@ -32,7 +32,7 @@ export default function Weather(props: WeatherProps) {
     timeIndex && data.hourly["relativehumidity_2m"][timeIndex];
 
   return (
-    <div>
+    <div className="bg-white p-4 rounded-md shadow-lg">
       <h2 className="text-2xl font-bold">Weather</h2>
       <br />
       <p>
