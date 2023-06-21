@@ -2,6 +2,7 @@ import { useState, useMemo } from "react";
 import { IncidentReportFile } from "./types";
 import IncidentDescription from "./components/IncidentDescription";
 import AddressMap from "./components/AddressMap";
+import ApparatusDetails from "./components/ApparatusDetails";
 
 function App() {
   const [fileContent, setFileContent] = useState<string | null>(null);
@@ -68,6 +69,7 @@ function App() {
         <div>
           <IncidentDescription description={parsedJSON.result.description} />
           <AddressMap key={fileContent} address={parsedJSON.result.address} />
+          <ApparatusDetails apparati={parsedJSON.result.apparatus} />
         </div>
       )}
     </div>
