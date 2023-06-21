@@ -28,6 +28,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@tailwindcss/forms", "virtual:210e5af5e9484595eca081a9ef28ae427986f709aed3fb61b5ded4931919ba4689235bc291828bfe5d107d0154f478b80810b97cd45dd9cc167ca4d19a34f068#npm:0.5.3"],\
             ["@types/react", "npm:18.2.13"],\
             ["@types/react-dom", "npm:18.2.6"],\
             ["@typescript-eslint/eslint-plugin", "virtual:210e5af5e9484595eca081a9ef28ae427986f709aed3fb61b5ded4931919ba4689235bc291828bfe5d107d0154f478b80810b97cd45dd9cc167ca4d19a34f068#npm:5.60.0"],\
@@ -800,6 +801,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@pkgjs-parseargs-npm-0.11.0-cd2a3fe948-6ad6a00fc4.zip/node_modules/@pkgjs/parseargs/",\
           "packageDependencies": [\
             ["@pkgjs/parseargs", "npm:0.11.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@tailwindcss/forms", [\
+        ["npm:0.5.3", {\
+          "packageLocation": "./.yarn/cache/@tailwindcss-forms-npm-0.5.3-4d75c0dfda-9eddb4dbd0.zip/node_modules/@tailwindcss/forms/",\
+          "packageDependencies": [\
+            ["@tailwindcss/forms", "npm:0.5.3"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:210e5af5e9484595eca081a9ef28ae427986f709aed3fb61b5ded4931919ba4689235bc291828bfe5d107d0154f478b80810b97cd45dd9cc167ca4d19a34f068#npm:0.5.3", {\
+          "packageLocation": "./.yarn/__virtual__/@tailwindcss-forms-virtual-05593810b2/0/cache/@tailwindcss-forms-npm-0.5.3-4d75c0dfda-9eddb4dbd0.zip/node_modules/@tailwindcss/forms/",\
+          "packageDependencies": [\
+            ["@tailwindcss/forms", "virtual:210e5af5e9484595eca081a9ef28ae427986f709aed3fb61b5ded4931919ba4689235bc291828bfe5d107d0154f478b80810b97cd45dd9cc167ca4d19a34f068#npm:0.5.3"],\
+            ["@types/tailwindcss", null],\
+            ["mini-svg-data-uri", "npm:1.4.4"],\
+            ["tailwindcss", "npm:3.3.2"]\
+          ],\
+          "packagePeers": [\
+            "@types/tailwindcss",\
+            "tailwindcss"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2427,6 +2451,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["incident-reports", "workspace:."],\
+            ["@tailwindcss/forms", "virtual:210e5af5e9484595eca081a9ef28ae427986f709aed3fb61b5ded4931919ba4689235bc291828bfe5d107d0154f478b80810b97cd45dd9cc167ca4d19a34f068#npm:0.5.3"],\
             ["@types/react", "npm:18.2.13"],\
             ["@types/react-dom", "npm:18.2.6"],\
             ["@typescript-eslint/eslint-plugin", "virtual:210e5af5e9484595eca081a9ef28ae427986f709aed3fb61b5ded4931919ba4689235bc291828bfe5d107d0154f478b80810b97cd45dd9cc167ca4d19a34f068#npm:5.60.0"],\
@@ -2773,6 +2798,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["micromatch", "npm:4.0.5"],\
             ["braces", "npm:3.0.2"],\
             ["picomatch", "npm:2.3.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["mini-svg-data-uri", [\
+        ["npm:1.4.4", {\
+          "packageLocation": "./.yarn/cache/mini-svg-data-uri-npm-1.4.4-929f6f1119-997f1fbd8d.zip/node_modules/mini-svg-data-uri/",\
+          "packageDependencies": [\
+            ["mini-svg-data-uri", "npm:1.4.4"]\
           ],\
           "linkType": "HARD"\
         }]\
