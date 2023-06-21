@@ -8,16 +8,24 @@ export interface ApparatusDetailsProps {
   apparati: Apparatus[];
 }
 
+/**
+ * Parses a date string and formats it in a way that looks nice.
+ * @param date The date string to parse and format.
+ * @returns The formatted date string.
+ */
 const parseAndFormatDate = (date: string) =>
   format(toDate(date), "LLLL do, yyyy hh:mm:ss aa zzz");
 
 export default function ApparatusDetails(props: ApparatusDetailsProps) {
+  // Set the initial state of the current apparatus index to 0 and the current status name to null.
+  // This will be used to track the current apparatus and status name in the component state.
   const [currentApparatusIndex, setCurrentApparatusIndex] = useState(0);
   const [currentStatusName, setCurrentStatusName] = useState<null | string>(
     null
   );
 
   const currentApparatus = props.apparati[currentApparatusIndex];
+
   const currentUnitStatus =
     currentStatusName !== null &&
     currentApparatus.unit_status[currentStatusName];

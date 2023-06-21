@@ -2,6 +2,11 @@ import Map from "./Map";
 import { Address } from "../types";
 import { Marker, Popup } from "react-leaflet";
 
+/**
+ * Renders a map with a marker at the given address's latitude and longitude.
+ * @param {Object} props - The component props.
+ * @param {Object} props.address - The address object containing the address details.
+ */
 export default function AddressMap({ address }: { address: Address }) {
   return (
     <div className="bg-white rounded-md shadow-lg p-4">

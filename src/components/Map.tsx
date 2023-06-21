@@ -2,6 +2,10 @@ import "leaflet/dist/leaflet.css";
 import "leaflet";
 import { MapContainer, TileLayer } from "react-leaflet";
 
+/**
+ * Common map container that we use in each of the other views. This is to reduce the need
+ * to copy / paste these params over and over.
+ */
 export default function Map(props: {
   center: [number, number];
   children?: React.ReactNode;

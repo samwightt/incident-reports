@@ -5,9 +5,15 @@ import AddressMap from "./components/AddressMap";
 import ApparatusDetails from "./components/ApparatusDetails";
 import Weather from "./components/Weather";
 
+/**
+ * Root component that composes all of the views together.
+ */
 function App() {
+  // The file content is set in a textarea. We store it here so that we can parse it.
   const [fileContent, setFileContent] = useState<string | null>(null);
 
+  // Parse the JSON, returning it if it was successful, returning an error if it was not, or return
+  // `null` if it's not defined yet.
   // Unfortunately TypeScript can't infer the return type of this function on its own.
   // Wrap the function in useMemo to avoid re-parsing the JSON on every render.
   const parsedJSON = useMemo<
