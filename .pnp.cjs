@@ -29,6 +29,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@tailwindcss/forms", "virtual:210e5af5e9484595eca081a9ef28ae427986f709aed3fb61b5ded4931919ba4689235bc291828bfe5d107d0154f478b80810b97cd45dd9cc167ca4d19a34f068#npm:0.5.3"],\
+            ["@types/leaflet", "npm:1.9.3"],\
             ["@types/react", "npm:18.2.13"],\
             ["@types/react-dom", "npm:18.2.6"],\
             ["@typescript-eslint/eslint-plugin", "virtual:210e5af5e9484595eca081a9ef28ae427986f709aed3fb61b5ded4931919ba4689235bc291828bfe5d107d0154f478b80810b97cd45dd9cc167ca4d19a34f068#npm:5.60.0"],\
@@ -40,9 +41,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.43.0"],\
             ["eslint-plugin-react-hooks", "virtual:210e5af5e9484595eca081a9ef28ae427986f709aed3fb61b5ded4931919ba4689235bc291828bfe5d107d0154f478b80810b97cd45dd9cc167ca4d19a34f068#npm:4.6.0"],\
             ["eslint-plugin-react-refresh", "virtual:210e5af5e9484595eca081a9ef28ae427986f709aed3fb61b5ded4931919ba4689235bc291828bfe5d107d0154f478b80810b97cd45dd9cc167ca4d19a34f068#npm:0.3.5"],\
+            ["leaflet", "npm:1.9.4"],\
             ["postcss", "npm:8.4.24"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:210e5af5e9484595eca081a9ef28ae427986f709aed3fb61b5ded4931919ba4689235bc291828bfe5d107d0154f478b80810b97cd45dd9cc167ca4d19a34f068#npm:18.2.0"],\
+            ["react-leaflet", "virtual:210e5af5e9484595eca081a9ef28ae427986f709aed3fb61b5ded4931919ba4689235bc291828bfe5d107d0154f478b80810b97cd45dd9cc167ca4d19a34f068#npm:4.2.1"],\
             ["tailwindcss", "npm:3.3.2"],\
             ["typescript", "patch:typescript@npm%3A5.1.3#~builtin<compat/typescript>::version=5.1.3&hash=5da071"],\
             ["vite", "virtual:210e5af5e9484595eca081a9ef28ae427986f709aed3fb61b5ded4931919ba4689235bc291828bfe5d107d0154f478b80810b97cd45dd9cc167ca4d19a34f068#npm:4.3.9"]\
@@ -817,6 +820,36 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@react-leaflet/core", [\
+        ["npm:2.1.0", {\
+          "packageLocation": "./.yarn/cache/@react-leaflet-core-npm-2.1.0-de483ca53f-c11a15fb71.zip/node_modules/@react-leaflet/core/",\
+          "packageDependencies": [\
+            ["@react-leaflet/core", "npm:2.1.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:c2b29c474593510816f06e313c884ff72a7f1f09e005d26d42eaf446899988004608ae0e6f120da8185634fe1ac0e30b1a9e4dbef7e4f269a3b7fa17a41ded9a#npm:2.1.0", {\
+          "packageLocation": "./.yarn/__virtual__/@react-leaflet-core-virtual-36ab41b3c4/0/cache/@react-leaflet-core-npm-2.1.0-de483ca53f-c11a15fb71.zip/node_modules/@react-leaflet/core/",\
+          "packageDependencies": [\
+            ["@react-leaflet/core", "virtual:c2b29c474593510816f06e313c884ff72a7f1f09e005d26d42eaf446899988004608ae0e6f120da8185634fe1ac0e30b1a9e4dbef7e4f269a3b7fa17a41ded9a#npm:2.1.0"],\
+            ["@types/leaflet", "npm:1.9.3"],\
+            ["@types/react", "npm:18.2.13"],\
+            ["@types/react-dom", "npm:18.2.6"],\
+            ["leaflet", "npm:1.9.4"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:210e5af5e9484595eca081a9ef28ae427986f709aed3fb61b5ded4931919ba4689235bc291828bfe5d107d0154f478b80810b97cd45dd9cc167ca4d19a34f068#npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/leaflet",\
+            "@types/react-dom",\
+            "@types/react",\
+            "leaflet",\
+            "react-dom",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@tailwindcss/forms", [\
         ["npm:0.5.3", {\
           "packageLocation": "./.yarn/cache/@tailwindcss-forms-npm-0.5.3-4d75c0dfda-9eddb4dbd0.zip/node_modules/@tailwindcss/forms/",\
@@ -849,11 +882,30 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@types/geojson", [\
+        ["npm:7946.0.10", {\
+          "packageLocation": "./.yarn/cache/@types-geojson-npm-7946.0.10-deca8d1263-12c407c2dc.zip/node_modules/@types/geojson/",\
+          "packageDependencies": [\
+            ["@types/geojson", "npm:7946.0.10"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@types/json-schema", [\
         ["npm:7.0.12", {\
           "packageLocation": "./.yarn/cache/@types-json-schema-npm-7.0.12-f05cfc0e99-00239e9723.zip/node_modules/@types/json-schema/",\
           "packageDependencies": [\
             ["@types/json-schema", "npm:7.0.12"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/leaflet", [\
+        ["npm:1.9.3", {\
+          "packageLocation": "./.yarn/cache/@types-leaflet-npm-1.9.3-7730c8a88b-d12042edc3.zip/node_modules/@types/leaflet/",\
+          "packageDependencies": [\
+            ["@types/leaflet", "npm:1.9.3"],\
+            ["@types/geojson", "npm:7946.0.10"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2496,6 +2548,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["incident-reports", "workspace:."],\
             ["@tailwindcss/forms", "virtual:210e5af5e9484595eca081a9ef28ae427986f709aed3fb61b5ded4931919ba4689235bc291828bfe5d107d0154f478b80810b97cd45dd9cc167ca4d19a34f068#npm:0.5.3"],\
+            ["@types/leaflet", "npm:1.9.3"],\
             ["@types/react", "npm:18.2.13"],\
             ["@types/react-dom", "npm:18.2.6"],\
             ["@typescript-eslint/eslint-plugin", "virtual:210e5af5e9484595eca081a9ef28ae427986f709aed3fb61b5ded4931919ba4689235bc291828bfe5d107d0154f478b80810b97cd45dd9cc167ca4d19a34f068#npm:5.60.0"],\
@@ -2507,9 +2560,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.43.0"],\
             ["eslint-plugin-react-hooks", "virtual:210e5af5e9484595eca081a9ef28ae427986f709aed3fb61b5ded4931919ba4689235bc291828bfe5d107d0154f478b80810b97cd45dd9cc167ca4d19a34f068#npm:4.6.0"],\
             ["eslint-plugin-react-refresh", "virtual:210e5af5e9484595eca081a9ef28ae427986f709aed3fb61b5ded4931919ba4689235bc291828bfe5d107d0154f478b80810b97cd45dd9cc167ca4d19a34f068#npm:0.3.5"],\
+            ["leaflet", "npm:1.9.4"],\
             ["postcss", "npm:8.4.24"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:210e5af5e9484595eca081a9ef28ae427986f709aed3fb61b5ded4931919ba4689235bc291828bfe5d107d0154f478b80810b97cd45dd9cc167ca4d19a34f068#npm:18.2.0"],\
+            ["react-leaflet", "virtual:210e5af5e9484595eca081a9ef28ae427986f709aed3fb61b5ded4931919ba4689235bc291828bfe5d107d0154f478b80810b97cd45dd9cc167ca4d19a34f068#npm:4.2.1"],\
             ["tailwindcss", "npm:3.3.2"],\
             ["typescript", "patch:typescript@npm%3A5.1.3#~builtin<compat/typescript>::version=5.1.3&hash=5da071"],\
             ["vite", "virtual:210e5af5e9484595eca081a9ef28ae427986f709aed3fb61b5ded4931919ba4689235bc291828bfe5d107d0154f478b80810b97cd45dd9cc167ca4d19a34f068#npm:4.3.9"]\
@@ -2710,6 +2765,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/json5-npm-2.2.3-9962c55073-2a7436a933.zip/node_modules/json5/",\
           "packageDependencies": [\
             ["json5", "npm:2.2.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["leaflet", [\
+        ["npm:1.9.4", {\
+          "packageLocation": "./.yarn/cache/leaflet-npm-1.9.4-8d372b0fe6-bfc79f17a2.zip/node_modules/leaflet/",\
+          "packageDependencies": [\
+            ["leaflet", "npm:1.9.4"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3479,6 +3543,37 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "packagePeers": [\
             "@types/react",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["react-leaflet", [\
+        ["npm:4.2.1", {\
+          "packageLocation": "./.yarn/cache/react-leaflet-npm-4.2.1-e2245640e8-79222c2ba0.zip/node_modules/react-leaflet/",\
+          "packageDependencies": [\
+            ["react-leaflet", "npm:4.2.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:210e5af5e9484595eca081a9ef28ae427986f709aed3fb61b5ded4931919ba4689235bc291828bfe5d107d0154f478b80810b97cd45dd9cc167ca4d19a34f068#npm:4.2.1", {\
+          "packageLocation": "./.yarn/__virtual__/react-leaflet-virtual-c2b29c4745/0/cache/react-leaflet-npm-4.2.1-e2245640e8-79222c2ba0.zip/node_modules/react-leaflet/",\
+          "packageDependencies": [\
+            ["react-leaflet", "virtual:210e5af5e9484595eca081a9ef28ae427986f709aed3fb61b5ded4931919ba4689235bc291828bfe5d107d0154f478b80810b97cd45dd9cc167ca4d19a34f068#npm:4.2.1"],\
+            ["@react-leaflet/core", "virtual:c2b29c474593510816f06e313c884ff72a7f1f09e005d26d42eaf446899988004608ae0e6f120da8185634fe1ac0e30b1a9e4dbef7e4f269a3b7fa17a41ded9a#npm:2.1.0"],\
+            ["@types/leaflet", "npm:1.9.3"],\
+            ["@types/react", "npm:18.2.13"],\
+            ["@types/react-dom", "npm:18.2.6"],\
+            ["leaflet", "npm:1.9.4"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:210e5af5e9484595eca081a9ef28ae427986f709aed3fb61b5ded4931919ba4689235bc291828bfe5d107d0154f478b80810b97cd45dd9cc167ca4d19a34f068#npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/leaflet",\
+            "@types/react-dom",\
+            "@types/react",\
+            "leaflet",\
+            "react-dom",\
             "react"\
           ],\
           "linkType": "HARD"\

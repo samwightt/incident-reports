@@ -24,13 +24,6 @@ export interface Address {
   state: string;
   suffix_direction: string;
   type: string;
-  unit_status: {
-    arrived: EventWithLocation;
-    available: EventWithLocation;
-    dispatched: EventWithLocation;
-    enroute: EventWithLocation;
-  };
-  unit_type: string;
 }
 
 export interface Apparatus {
@@ -46,8 +39,11 @@ export interface Apparatus {
   personnel: [];
   shift: string;
   station: string;
+  unit_status: {
+    [key: string]: EventWithLocation;
+  };
+  unit_type: string;
   unit_id: string;
-  unit_status: string;
 }
 
 export interface IncidentDescription {

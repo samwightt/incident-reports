@@ -1,6 +1,7 @@
 import { useState, useMemo } from "react";
 import { IncidentReportFile } from "./types";
 import IncidentDescription from "./components/IncidentDescription";
+import Map from "./components/Map";
 
 function App() {
   const [fileContent, setFileContent] = useState<string | null>(null);
@@ -64,8 +65,9 @@ function App() {
         </form>
       </div>
       {parsedJSON?.success && (
-        <div>
+        <div className="">
           <IncidentDescription description={parsedJSON.result.description} />
+          <Map report={parsedJSON.result} />
         </div>
       )}
     </div>
