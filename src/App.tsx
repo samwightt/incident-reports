@@ -3,6 +3,7 @@ import { IncidentReportFile } from "./types";
 import IncidentDescription from "./components/IncidentDescription";
 import AddressMap from "./components/AddressMap";
 import ApparatusDetails from "./components/ApparatusDetails";
+import Weather from "./components/Weather";
 
 function App() {
   const [fileContent, setFileContent] = useState<string | null>(null);
@@ -68,6 +69,7 @@ function App() {
       {parsedJSON?.success && (
         <div>
           <IncidentDescription description={parsedJSON.result.description} />
+          <Weather report={parsedJSON.result} />
           <AddressMap key={fileContent} address={parsedJSON.result.address} />
           <ApparatusDetails apparati={parsedJSON.result.apparatus} />
         </div>
