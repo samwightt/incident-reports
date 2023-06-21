@@ -1,5 +1,6 @@
 import { useState, useMemo } from "react";
 import { IncidentReportFile } from "./types";
+import IncidentDescription from "./components/IncidentDescription";
 
 function App() {
   const [fileContent, setFileContent] = useState<string | null>(null);
@@ -28,7 +29,7 @@ function App() {
   }, [fileContent]);
 
   return (
-    <div className="w-full min-h-screen">
+    <div className="w-full min-h-screen bg-gray-50 px-2 space-y-8">
       <div>
         <form
           onSubmit={(e) => {
@@ -64,16 +65,7 @@ function App() {
       </div>
       {parsedJSON?.success && (
         <div>
-          <dl className="space-y-4">
-            <dt>Comments</dt>
-            <dd>{parsedJSON.result.description.comments}</dd>
-
-            <dt>Incident Type</dt>
-            <dd>{parsedJSON.result.description.type}</dd>
-
-            <dt>Incident Subtype</dt>
-            <dd>{parsedJSON.result.description.subtype}</dd>
-          </dl>
+          <IncidentDescription description={parsedJSON.result.description} />
         </div>
       )}
     </div>
