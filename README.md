@@ -2,6 +2,8 @@
 
 An incident report viewer for 911 emergency calls.
 
+Please note that this software has no license, you do not have permission to copy it, modify it, redistribute it, or run it in any production applications. It is copyrighted by me. Thanks!
+
 ## Setup
 
 1. On macOS, [download and install the latest LTS of Node.js](https://nodejs.org/en).
